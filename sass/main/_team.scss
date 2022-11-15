@@ -1,0 +1,107 @@
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hue {  
+    background-color: #F5F4FA;
+}
+
+.team-basic {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+
+.team-list {
+    width: 1170px;
+    height: 428px;
+    display: flex;      
+    gap: 30px;         
+    margin: 0 auto;
+}
+
+.team-person {
+    width: calc((100% - 90px) / 4);
+    height: 428px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.text-team {
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.first-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    white-space: nowrap;
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+    white-space: nowrap;
+    margin-bottom: 16px;
+}
+
+.barbers-cos-list {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+.barbers-cos-item {   /* li */
+    width: 44px;
+    height: 44px;
+}
+ 
+.barbers-cos-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: currentColor;
+    color: #AFB1B8;
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    transform: scale(2);
+    background-color: var(--accent-color); 
+    box-shadow: 5px -5px 5px rgb(117, 117, 243);
+    color: #FFFFFF;
+    }
+}
+
+.barbers-cos-icon {
+    fill: currentColor;
+}
+

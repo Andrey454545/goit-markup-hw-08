@@ -1,0 +1,33 @@
+/* колір осн. текста   #212121 */
+/* допоміж. колір текста  #757575 */
+/* білий   #FFFFFF */
+/* акцент   #2196F3 */
+/* втор. колір фона #F5F5F5 */
+
+
+
+body{
+    color: var(--primary-text-color); 
+    font-family: 'Roboto';
+} 
+
+
+* {
+    margin: 0;  /* cбросити відступи до "0" */
+    padding: 0; 
+    box-sizing: border-box; /*щоб padding не збільш. , а звужували весь контент всередину*/
+}
+
+ul{
+    list-style: none; /* видалить всі точки перед словами */
+}
+
+@keyframes rotator {
+    0% {
+    transform: rotate(0);
+    }
+
+    100% {
+    transform: rotate(360deg);
+    }
+}
