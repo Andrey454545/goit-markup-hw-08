@@ -1,6 +1,16 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    @media screen and (min-width: 480px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .line {
@@ -9,23 +19,46 @@
     border-bottom: 1px solid #ECECEC; 
 }
 
-.container {
-    width: 1200px;
-    padding-left: 0;
-    padding-right: 0;    
-}
-
 .header__container {
     margin: 0 auto;
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    justify-content: center;
+    padding-left: 15px; 
+    @media screen and (min-width: 480px) {
+        padding-left: 15px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-left: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-left: 215px;
+    }
 }
+
+.container {
+    // padding-left: 0;
+    // padding-right: 0;
+      width: 100%;
+    @media screen and (min-width: 480px) {
+        // width: 480px;
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+
 
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
@@ -34,30 +67,38 @@
         background-color: inherit;
         outline: 0;
     }
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
-<<<<<<< HEAD
-=======
-.logo:focus {
-    color: var(--accent-color);
-    background-color: inherit;
-    outline: 0;
-}
-
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .logo__studio{
     color: #000000;
 }
 
 .frame__line {
+    
+    @media screen and (min-width: 480px) {
+        // width: 100%;
+        // margin-right: 30px;
+    }
     margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        // width: 100%;
+        // margin-right: 30px;
+    }
 }
 
 .site__nav {
-    width: 281px;
-    height: 16px;
-    display: flex;
-    gap: 50px;
+    display: none;
+    @media screen and (min-width: 768px) {
+        width: 281px;
+        height: 16px;
+        display: flex;
+        gap: 50px;
+    }
 }
 
 .site__unit.current { 
@@ -81,22 +122,6 @@
     }
 } 
 
-<<<<<<< HEAD
-=======
-
-.site__unit.current::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    left: 0;
-    bottom: -28px;
-}
-
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .site__sheave.current {
     font-weight: 500;
     font-size: 14px;
@@ -126,42 +151,6 @@
     }
 }
 
-<<<<<<< HEAD
-=======
-.site__sheave:focus {
-    color: var(--accent-color);
-    background-color: inherit;
-    outline: 0;
-}
-
-.site__sheave:hover {  
-    color: var(--title-text-color);
-} 
-
-.site__sheave::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    left: 0;
-    bottom: -28px;
-}
-
-/*.unit::after {
-    content: '';
-    display: inline-block;
-    width: 45px;
-    height: 16px;
-    background-image: url(../img/finger\ 1.png);
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    background-position: right;
-}*/
-
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .site__block {
     font-weight: 500;
     font-size: 14px;
@@ -187,4 +176,20 @@
     }
 }
  
+.menu-button {
+    // display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    padding-right: 15px;
+    margin-left: auto;
+    @media screen and (min-width: 480px) {
+        // width: 480px;
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
 

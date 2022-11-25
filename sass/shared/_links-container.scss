@@ -1,7 +1,26 @@
+.links-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    padding-top: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+    }
+    @media screen and (min-width: 768px) {
+        padding-left: 70px;
+        padding-right: 78px;
+    }
+}
+
 .header-links {
-    width: 80px;
-    padding-top: 12px;
+    text-align: center;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-top: 5px;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .come {
@@ -38,27 +57,14 @@
     transition-property: transform, background-color, box-shadow;
     transition-duration: 700ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-<<<<<<< HEAD
     &:focus,
     &:hover {
     transform: scale(2);
     background-color: var(--accent-color);
     box-shadow: 5px -3px 5px rgb(64, 226, 199);
     }
-=======
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 }
 
 .links-cos-icon {
     fill: currentColor;
 }
-<<<<<<< HEAD
-=======
-
-.links-cos-link:focus,
-.links-cos-link:hover {
-    transform: scale(2);
-    background-color: var(--accent-color);
-    box-shadow: 5px -3px 5px rgb(64, 226, 199);
-}
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2

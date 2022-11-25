@@ -40,12 +40,9 @@
     cursor: pointer;
     color: #000000;
     fill: currentColor;
-<<<<<<< HEAD
     &-icon:hover {
         fill: var(--accent-color);
     }
-=======
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 }
 
 .backdrop.is-hidden {
@@ -54,13 +51,6 @@
     pointer-events: none;
 }
 
-<<<<<<< HEAD
-=======
-.modal-close-icon:hover {
-    fill: var(--accent-color);
-}
-
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .modal-title {
     font-weight: 700;
     font-size: 20px;

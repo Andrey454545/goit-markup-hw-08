@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=headre, initial-scale=1.0">
-   
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
                 <a href="./index.html" class="logo">
                 Web<span class="logo__studio">Studio</span></a> 
             <nav class="frame frame__line">
-                <ul class="site site__nav">    <!-- ul список-->
+                <ul class="site site__nav">   
                     <div class="hookup">
                         <li><a href="./index.html"
                             class="site__unit hookup current">Студія</a></li>
@@ -33,9 +33,16 @@
                             class="site__block hookup">Контакти</a></li>
                     </div>
                 </ul>
+                <button class="menu-button" type="button" data-modal-open>
+                    <svg
+                    width="40" height="40"
+                    aria-label="Перемикач мобільного меню">
+                        <use class="icon-menu" href="./img/icon.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </nav>
 
-            <!-------------- header-contact ---------------->
+            <!-- ------------ header-contact -------------- -->
             <div class="contact header__contact">
                 <ul class="form form__conn">
                     <div class="hookup apple">
@@ -55,21 +62,20 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </header> 
 
     <main>         
                      <!-------------- main-head ---------------->
-        <section class="main-head"> 
+         <section class="main-head"> 
             <div class="main-container">
                 <h1 class="section-main">Ефективні рішення для <br>
                     вашого бізнесу</h1>
-                <button class="button-main" type="button" data-modal-open>Замовити послугу</button>
+                <button class="button-main btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
-
+        </section> 
 
                     <!------------- descrip ------------------->
-        <section class="descrip descrip__section"> 
+         <section class="descrip descrip__section"> 
             <div class="clarity main-container entrance">
                 <h2 class="visually visually__hidden">Галерея</h2> 
                 <ul class="depiction">    
@@ -97,228 +103,323 @@
                     </li>    
                 </ul>
             </div>
-        </section>
+        </section>  
 
 
                      <!----------- section-foto --------------->
-        <section class="foto-section">  
-            <div class="main-container">
+           <section class="foto-section">  
+            <div class="main-container foto-container">
                 <h2 class="title-img">Чим ми займаємося</h2>
-                <ul class="foto-list">    <!-- ul список-->
+                <ul class="foto-list">   
                     <li class="dest">
                         <div class="annex-des">
-                            <img src="./img/комп_1.jpg" alt="комп_1" width="370" height="294">
+                            <img
+                            srcset="./img/foto-team/annex1-deks-1x.jpg 1x,
+                             ./img/foto-team/annex1-deks-2x.jpg 2x"
+                            src="./img/комп_1.jpg"
+                            alt="комп_1"
+                            width="370"
+                            height="294">
                             <p class="annex-text">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="dest">
                         <div class="annex-des">
-                            <img src="./img/комп_2.jpg" alt="комп_2" width="370" height="294">
+                            <img
+                            srcset="./img/foto-team/annex2-deks-1x.jpg 1x,
+                             ./img/foto-team/annex2-deks-2x.jpg 2x"
+                            src="./img/комп_2.jpg"
+                            alt="комп_2"
+                            width="370"
+                            height="294">
                             <p class="annex-text">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="dest">
                         <div class="annex-des">
-                            <img src="./img/комп_3.jpg" alt="комп_3" width="370" height="294">
+                            <img
+                            srcset="./img/foto-team/annex3-deks-1x.jpg 1x,
+                             ./img/foto-team/annex3-deks-2x.jpg 2x"
+                            src="./img/комп_3.jpg"
+                            alt="комп_3"
+                            width="370"
+                            height="294">
                             <p class="annex-text">Дизайнерські рішення</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section>    
         
                             <!----------------- team -------------------->
-        <section class="team-section hue">   
+             <section class="team-section hue">   
             <div class="main-container">
                 <h2 class="team-basic">Наша команда</h2>
-                <ul class="team-list">    <!-- ul список-->
-                <li class="team-person">
-                    <img src="./img/команда1.jpg" alt="команда1" width="270" height="260">
-                    <div class="text-team">
-                        <h3 class="first-name">Ігор Дем'яненко</h3>
-                        <p class="profession">Product Designer</p>
-                        <ul class="barbers-cos-list list">
-                            <li class="barbers-cos-item fing">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-instagram"></use>
-                                  </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-twitter"></use>
-                                    </svg>                                 
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-facebook"></use>
+                <ul class="team-list">   
+                    <li class="team-person">
+                        <picture>
+                            <source srcset="./img/foto-team/img1-deks-1x.jpg 1x,
+                            ./img/foto-team/img1-deks-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./img/foto-team/img1-tab-1x.jpg 1x,
+                            ./img/foto-team/img1-tab-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./img/foto-team/img1-mob-1x.jpg 1x,
+                            ./img/foto-team/img1-mob-2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            />
+                            <img
+                            src="./img/команда1.jpg"
+                            alt="команда1"
+                            width="450"
+                            height="260">
+                        </picture>
+                        
+                        <div class="text-team">
+                            <h3 class="first-name">Ігор Дем'яненко</h3>
+                            <p class="profession">Product Designer</p>
+                            <ul class="barbers-cos-list list">
+                                <li class="barbers-cos-item fing">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-instagram"></use>
                                     </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-linkedin"></use>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-twitter"></use>
+                                        </svg>                                 
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>             
+                    </li>
+                    <li class="team-person">
+                        <picture>
+                            <source srcset="./img/foto-team/img2-deks-1x.jpg 1x,
+                            ./img/foto-team/img2-deks-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./img/foto-team/img2-tab-1x.jpg 1x,
+                            ./img/foto-team/img2-tab-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./img/foto-team/img2-mob-1x.jpg 1x,
+                            ./img/foto-team/img2-mob-2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            />
+                            <img
+                        src="./img/команда2.jpg"
+                        alt="команда2"
+                        width="450"
+                        height="260">
+                        </picture>
+                        
+
+                        <div class="text-team">
+                            <h3 class="first-name">Ольга Рєпіна</h3>
+                            <p class="profession">Frontend Developer</p>
+                            <ul class="barbers-cos-list list">
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-instagram"></use>
                                     </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>             
-                </li>
-                <li class="team-person">
-                    <img src="./img/команда2.jpg" alt="команда2" width="270" height="260">
-                    <div class="text-team">
-                        <h3 class="first-name">Ольга Рєпіна</h3>
-                        <p class="profession">Frontend Developer</p>
-                        <ul class="barbers-cos-list list">
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-instagram"></use>
-                                  </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-twitter"></use>
-                                    </svg>                                 
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-facebook"></use>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-twitter"></use>
+                                        </svg>                                 
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-person">
+                        <picture>
+                            <source srcset="./img/foto-team/img3-deks-1x.jpg 1x,
+                            ./img/foto-team/img3-deks-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./img/foto-team/img3-tab-1x.jpg 1x,
+                            ./img/foto-team/img3-tab-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./img/foto-team/img3-mob-1x.jpg 1x,
+                            ./img/foto-team/img3-mob-2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            />
+                            <img
+                            src="./img/команда3.jpg"
+                            alt="команда3"
+                            width="450"
+                            height="260">
+                        </picture>
+                        
+                        <div class="text-team">
+                            <h3 class="first-name">Микола Тарасов</h3>
+                            <p class="profession">Marketing</p>
+                            <ul class="barbers-cos-list list">
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-instagram"></use>
                                     </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-linkedin"></use>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-twitter"></use>
+                                        </svg>                                 
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-person">
+                        <picture>
+                            <source srcset="./img/foto-team/img4-deks-1x.jpg 1x,
+                            ./img/foto-team/img4-deks-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="./img/foto-team/img4-tab-1x.jpg 1x,
+                            ./img/foto-team/img4-tab-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="./img/foto-team/img4-mob-1x.jpg 1x,
+                            ./img/foto-team/img4-mob-2x.jpg 2x"
+                            media="(min-width: 320px)"
+                            />
+                            <img
+                            src="./img/команда4.jpg"
+                            alt="команда4"
+                            width="450"
+                            height="260">
+                        </picture>
+                       
+                        <div class="text-team">
+                            <h3 class="first-name">Михайло Єрмаков</h3>
+                            <p class="profession">UI Designer</p>
+                            <ul class="barbers-cos-list list">
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-instagram"></use>
                                     </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-person">
-                    <img src="./img/команда3.jpg" alt="команда3" width="270" height="260">
-                    <div class="text-team">
-                        <h3 class="first-name">Микола Тарасов</h3>
-                        <p class="profession">Marketing</p>
-                        <ul class="barbers-cos-list list">
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-instagram"></use>
-                                  </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-twitter"></use>
-                                    </svg>                                 
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-person">
-                    <img src="./img/команда4.jpg" alt="команда4" width="270" height="260">
-                    <div class="text-team">
-                        <h3 class="first-name">Михайло Єрмаков</h3>
-                        <p class="profession">UI Designer</p>
-                        <ul class="barbers-cos-list list">
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-instagram"></use>
-                                  </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-twitter"></use>
-                                    </svg>                                 
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers-cos-item">
-                                <a href="" class="barbers-cos-link">
-                                    <svg class="barbers-cos-icon" width="20" height="20">
-                                    <use href="./img/icon.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul> 
-                    </div>
-                </li>    
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-twitter"></use>
+                                        </svg>                                 
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="barbers-cos-item">
+                                    <a href="" class="barbers-cos-link">
+                                        <svg class="barbers-cos-icon" width="20" height="20">
+                                        <use href="./img/icon.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </li>    
                 </ul>
             </div>
-        </section>
+        </section>  
 
 
                         <!--------------- client-section ------------------->
-        <section class="customer"> 
+           <section class="customer"> 
             <div class="main-container">
                 <h2 class="link client__link">Постійні клієнти</h2> 
                 <ul class="client">      
-                    <li class="client__item clients">
+                    <li class="client__item client">
                         <a href="" class="client__cos">
                             <svg class="client__icon" width="106" height="60">
                             <use href="./img/icon.svg#icon-Logo"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item clients">
+                    <li class="client__item client">
                         <a href="" class="client__cos">
                             <svg class="client__icon" width="106" height="60">
                             <use href="./img/icon.svg#icon-Logo-1"></use>
                             </svg>                                 
                         </a>
                     </li>
-                    <li class="client__item clients">
+                    <li class="client__item client">
                         <a href="" class="client__cos">
                             <svg class="client__icon" width="106" height="60">
                             <use href="./img/icon.svg#icon-Logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item clients four-fing">
+                    <li class="client__item client four-fing">
                         <a href="" class="client__cos">
                             <svg class="client__icon" width="106" height="60"">
                             <use href="./img/icon.svg#icon-Logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client__item clients">
+                    <li class="client__item client">
                         <a href="" class="client__cos">
                             <svg class="client__icon" width="106" height="60"">
                             <use href="./img/icon.svg#icon-Logo-4"></use>
@@ -334,70 +435,73 @@
                     </li>
                 </ul>    
             </div>
-        </section>
+        </section>   
 
     </main>
                      <!--------------- footer ---------------->
-    <footer class="footer-section date">    
-        <div class="footer-envelope">
-            <div class="address-container">
-                <a href="./index.html" class="logo-footer">
-                Web<span class="logo-web">Studio</span></a>  
-                <address class="address-picture">        
-                <a href="https://goo.gl/maps/kxmiB2aWY7ckn5UL8"
-                    target="_blank" rel="noopener noreferrer nofollow"
-                    class="footer-address address-size"
-                    >м. Київ, пр-т Лесі Українки, 26</a>
-                <ul>
-                    <li class="address-size">
-                        <a href="mailto:info@devstudio.com"
-                        class="item-footer">info@devstudio.com</a></li>
-                    <li class="address-tel">
-                        <a href="tel:+380961111111"
-                        class="item-footer">+38 096 111 11 11</a></li>            
-                </ul>
-                </address>
+     <footer class="footer-section date">    
+        <div class="footer-envelope main-container ">
+            <div class="address-links">
+                <div class="address-container">
+                    <a href="./index.html" class="logo-footer">
+                    Web<span class="logo-web">Studio</span></a>  
+                    <address class="address-picture">        
+                    <a href="https://goo.gl/maps/kxmiB2aWY7ckn5UL8"
+                        target="_blank" rel="noopener noreferrer nofollow"
+                        class="footer-address address-size"
+                        >м. Київ, пр-т Лесі Українки, 26</a>
+                    <ul>
+                        <li class="address-size">
+                            <a href="mailto:info@devstudio.com"
+                            class="item-footer">info@devstudio.com</a></li>
+                        <li class="address-tel">
+                            <a href="tel:+380961111111"
+                            class="item-footer">+38 096 111 11 11</a></li>            
+                    </ul>
+                    </address>
+                </div>
+    
+                                <!-- ----   links-container   ----- -->
+                <div class="links-container">
+                    <h3 class="header-links come">ПРИЄДНУЙТЕСЬ</h3>
+                    <ul class="links-list">
+                        <li class="links-item">
+                            <a href="" class="links-cos-link">
+                                <svg class="links-cos-icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-instagram"></use>
+                                </svg>                                 
+                            </a>
+                        </li>
+                        <li class="links-item">
+                            <a href="" class="links-cos-link">
+                                <svg class="links-cos-icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="links-item">
+                            <a href="" class="links-cos-link">
+                                <svg class="links-cos-icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-facebook"></use>
+                                </svg>                                 
+                            </a>
+                        </li>
+                        <li class="links-item">
+                            <a href="" class="links-cos-link">
+                                <svg class="links-cos-icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-linkedin"></use>
+                                </svg>                                 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+           
 
-                            <!------   links-container   ------->
-            <div class="links-container">
-                <h3 class="header-links come">ПРИЄДНУЙТЕСЬ</h3>
-                <ul class="links-list">
-                    <li class="links-item">
-                        <a href="" class="links-cos-link">
-                            <svg class="links-cos-icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-instagram"></use>
-                            </svg>                                 
-                        </a>
-                    </li>
-                    <li class="links-item">
-                        <a href="" class="links-cos-link">
-                            <svg class="links-cos-icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="links-item">
-                        <a href="" class="links-cos-link">
-                            <svg class="links-cos-icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-facebook"></use>
-                            </svg>                                 
-                        </a>
-                    </li>
-                    <li class="links-item">
-                        <a href="" class="links-cos-link">
-                            <svg class="links-cos-icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-linkedin"></use>
-                            </svg>                                 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-                            <!-------  mailing ------->
-            <div class="mailing">
-                <h3 class="maining-header maining-come">Підпишіться на розсилку</h3>
-                <div class="mailing-container">
+                            <!-- -----  mailing ----- -->
+            <div class="mailing"> 
+                 <h3 class="maining-header maining-come">Підпишіться на розсилку</h3> 
+                 <div class="mailing-container">
                     <div class="mailing-field">
                         <label for="user-name-mailing" class="input-label-sss">
                             <div class="mailing-wrap">
@@ -417,12 +521,12 @@
                         <use href="./img/icon.svg#icon-icon-send"></use>
                         </svg>
                     </button>     
-                </div>
+                </div> 
             </div>
         </div>
-    </footer>
+    </footer> 
 
-                <!-------  modal window ------->
+                <!-- -----  modal window ----- -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" type="button" data-modal-close>
@@ -432,7 +536,7 @@
             </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             
-                <!------- form ------->
+                
 
             <form>
                 <div class="modal-field">
@@ -498,21 +602,8 @@
                         </label>
                 </div>
 
-                <!--
-                <div>
-                    <p>size</p>
-                    <label for="big">Big</label>
-                    <input type="checkbox" disabled name="big" id="big">
-                    <label for="small">Small</label>
-                    <input type="checkbox" name="small" id="small">
-                </div>
-                -->
 
-<<<<<<< HEAD
-                    <!---------- terms-treaty ---------->
-=======
-                    <!----------terms---------->
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
+                    
                     
                 <div class="modal-comment">
                     <input type="checkbox"  
@@ -531,8 +622,8 @@
                 <button class="button-send" type="submit">Відправити</button>
 
             </form>
-        </div>
-    </div>
+        </div> 
+    </div> 
     <script src="./js/modal.js"></script>
 </body>
 </html>

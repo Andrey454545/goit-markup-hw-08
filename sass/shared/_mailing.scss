@@ -1,11 +1,26 @@
 .mailing {
-    margin-left: 93px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    padding-top: 60px;
+    @media screen and (min-width: 1200px) {
+       padding-top: 12px;
+    }
 }
 
 .maining-header {
-    width: 570px;
-    padding-top: 12px;
     margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+        padding-top: 0;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .maining-come {
@@ -20,13 +35,22 @@
 }
 
 .mailing-container {
-    display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .mailing-field {
     margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .mailing-wrap {

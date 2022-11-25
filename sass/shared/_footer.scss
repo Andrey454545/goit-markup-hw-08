@@ -4,13 +4,26 @@
 }
 
 .footer-envelope {
-    width: 1600px;
-    display: flex;
-    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.address-links {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .address-container {
-    padding-left: 215px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
 }
 
 .links-container {
@@ -18,7 +31,6 @@
 }
 
 .date {
-    height: 252px;
     background: #2F303A;
 }
 
@@ -38,8 +50,9 @@
 
 .address-picture {
     margin-top: 20px;
-    width: 231px;
-    height: 21px;
+    @media screen and (min-width: 1200px) {
+        width: 231px;
+    }
 }
 
 .footer-address {
@@ -50,18 +63,25 @@
     letter-spacing: 0.03em;
     color: var(--white-color);
     text-decoration: none;
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
 }
 
 .address-size {
-    width: 231px;
     height: 21px;
     margin-top: 9px;
+    @media screen and (min-width: 1200px) {
+        max-width: 231px;
+    }
 }
 
 .address-tel {
-    width: 231px;
     height: 21px;
     margin-top: 9px;
+    @media screen and (min-width: 1200px) {
+        width: 231px;
+    }
 }
 
 .item-footer {

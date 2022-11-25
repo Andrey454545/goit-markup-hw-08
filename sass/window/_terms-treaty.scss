@@ -1,16 +1,4 @@
 
-<<<<<<< HEAD
-=======
-
-/*.modal-comment {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
- }
-*/
-
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .visually-hidden {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -47,7 +35,6 @@
     align-items: center;
     justify-content: center;
     fill: transparent;
-<<<<<<< HEAD
     .input-check:checked + & {
         background-color: var(--accent-color);
         border-color: transparent;
@@ -55,35 +42,6 @@
     }
 }
 
-=======
-}
-
-.input-check:checked + .check-text span {
-    background-color: var(--accent-color);
-    border-color: transparent;
-    fill: #FFFFFF;
-}
-
-/*
-.check-text::before {
-    content: '';
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 3px;
-    margin-right: 5px;
-}
-
-.input-check:checked + .check-text::before {
-    background-color: var(--accent-color);
-    border-color: transparent;
-    background-image: url(../img/check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
-
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .button-send {
     font-family: 'Roboto';
     font-weight: 700;
@@ -100,8 +58,4 @@
     display: block;
     margin: 0 auto;
     border: 0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2

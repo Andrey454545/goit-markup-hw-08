@@ -3,6 +3,12 @@
     padding-bottom: 94px;
 }
 
+.foto-container {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
 .title-img{
     font-weight: 700;
     font-size: 36px;
