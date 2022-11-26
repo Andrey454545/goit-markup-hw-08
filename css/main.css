@@ -30,6 +30,12 @@ ul {
   list-style: none; /* видалить всі точки перед словами */
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @-webkit-keyframes rotator {
   0% {
     transform: rotate(0);
@@ -128,12 +134,6 @@ img {
 }
 .modal-close-icon:hover {
   fill: var(--accent-color);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .modal-title {
@@ -492,7 +492,7 @@ img {
   color: var(--accent-color);
 }
 
-.menu-button {
+.menu-open {
   margin: 0;
   padding: 0;
   border: none;
@@ -501,12 +501,12 @@ img {
   margin-left: auto;
 }
 @media screen and (min-width: 480px) {
-  .menu-button {
+  .menu-open {
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-open {
     display: none;
   }
 }
