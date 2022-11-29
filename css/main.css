@@ -99,8 +99,8 @@ img {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  width: 528px;
+  height: 581px;
   border-radius: 4px;
   background-color: #FFFFFF;
   position: absolute;
@@ -109,12 +109,6 @@ img {
   transform: translate(-50%, -50%) rotate(0);
   transition: transform 250ms linear, border-radius 250ms linear;
   padding: 40px;
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
 }
 
 .backdrop.is-hidden .modal {
@@ -145,17 +139,11 @@ img {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
-}
-@media screen and (min-width: 1200px) {
-  .modal-title {
-    font-size: 20px;
-    line-height: 1.15;
-  }
 }
 
 .modal-field {
@@ -271,18 +259,12 @@ img {
 
 .check-text {
   font-weight: 400;
-  font-size: 10px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .check-text {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 
 .none {
@@ -362,7 +344,21 @@ img {
   align-items: center;
   justify-content: center;
   padding-left: 15px;
-  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .header__container {
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-left: 215px;
+  }
 }
 
 .container {
@@ -411,9 +407,8 @@ img {
 }
 
 .frame__line {
-  margin-left: auto;
+  margin-left: 93px;
 }
-
 .site__nav {
   display: none;
 }
@@ -572,6 +567,7 @@ img {
 
 .mob-menu-list {
   margin-top: 48px;
+  margin-bottom: 306px;
 }
 
 .mob-menu__item {
@@ -637,12 +633,6 @@ img {
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .linear {
-    display: none;
-  }
-}
-
 .form {
   display: none;
 }
@@ -654,8 +644,8 @@ img {
 @media screen and (min-width: 768px) {
   .form {
     display: flex;
+    height: 16px;
     flex-direction: column;
-    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -683,12 +673,6 @@ img {
 .form__email:hover, .form__email:focus {
   color: var(--accent-color);
   outline: 0;
-}
-@media screen and (min-width: 768px) {
-  .form__email {
-    font-size: 12px;
-    line-height: 1.16;
-  }
 }
 
 .apple {
@@ -745,12 +729,6 @@ img {
   color: var(--accent-color);
   outline: 0;
 }
-@media screen and (min-width: 768px) {
-  .form__number {
-    font-size: 12px;
-    line-height: 1.16;
-  }
-}
 
 .footer-section {
   padding-top: 60px;
@@ -779,12 +757,6 @@ img {
 @media screen and (min-width: 768px) {
   .address-container {
     width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .address-container {
-    width: 100%;
-    text-align: left;
   }
 }
 
@@ -1067,6 +1039,9 @@ img {
 
 .main-head {
   max-width: 100%;
+  height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1074,38 +1049,41 @@ img {
 }
 @media screen and (min-width: 480px) {
   .main-head {
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: var(--gradient), url(../img/foto-team/cap1-mob-1x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .main-head {
-    height: 415px;
-    padding-top: 122px;
-    padding-bottom: 122px;
     background-image: var(--gradient), url(../img/foto-team/cap1-tab-1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .main-head {
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: var(--gradient), url(../img/foto-team/cap1-deks-1x.jpg);
   }
 }
 
 .section-main {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .section-main {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-main {
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-main {
@@ -1115,10 +1093,10 @@ img {
 }
 
 .button-main {
+  font-family: "Roboto";
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.18;
-  align-items: center;
+  font-size: 16px;
+  line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1139,12 +1117,7 @@ img {
 }
 
 .descrip__section {
-  padding-top: 94px;
-}
-@media screen and (min-width: 768px) {
-  .descrip__section {
-    padding-top: 45px;
-  }
+  padding-top: 60px;
 }
 
 .entrance {
@@ -1169,6 +1142,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
   justify-content: center;
 }
 
@@ -1233,11 +1207,6 @@ img {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
-  .title__conn {
-    text-align: center;
-  }
-}
 
 .depiction__text {
   font-weight: 400;
@@ -1250,18 +1219,6 @@ img {
 .foto-section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-@media screen and (min-width: 768px) {
-  .foto-section {
-    padding-top: 0;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .foto-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1312,12 +1269,6 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 768px) {
-  .team-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 
 .hue {
   background-color: #F5F4FA;
@@ -1325,8 +1276,8 @@ img {
 
 .team-basic {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -1334,8 +1285,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-basic {
-    font-size: 36px;
-    line-height: 1.16;
     margin-bottom: 50px;
   }
 }
@@ -1433,17 +1382,11 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 768px) {
-  .customer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 
 .client__link {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -1451,8 +1394,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .client__link {
-    font-size: 36px;
-    line-height: 1.16;
     margin-bottom: 50px;
   }
 }
