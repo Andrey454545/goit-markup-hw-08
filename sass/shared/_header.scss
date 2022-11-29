@@ -20,29 +20,18 @@
 }
 
 .header__container {
-    margin: 0 auto;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    padding-left: 15px; 
-    @media screen and (min-width: 480px) {
+        margin: 0 auto;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
         padding-left: 15px;
-    }
-    @media screen and (min-width: 768px) {
-        padding-left: 15px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-left: 215px;
-    }
+        padding-right: 15px; 
 }
 
 .container {
-    // padding-left: 0;
-    // padding-right: 0;
       width: 100%;
     @media screen and (min-width: 480px) {
-        // width: 480px;
-        width: 100%;
+        width: 480px;
     }
     @media screen and (min-width: 768px) {
         width: 768px;
@@ -51,8 +40,7 @@
         width: 1200px;
     }
 }
-
-
+  
 
 .logo {
     font-family: 'Raleway';
@@ -79,15 +67,15 @@
 }
 
 .frame__line {
-    
+    margin-left: auto;
     @media screen and (min-width: 480px) {
-        // width: 100%;
-        // margin-right: 30px;
+        margin-left: auto;
     }
-    margin-left: 93px;
+    @media screen and (min-width: 768px) {
+        margin-left: 87px;
+    }
     @media screen and (min-width: 1200px) {
-        // width: 100%;
-        // margin-right: 30px;
+        margin-left: 92px;
     }
 }
 
@@ -120,7 +108,7 @@
         left: 0;
         bottom: -28px;
     }
-} 
+}
 
 .site__sheave.current {
     font-weight: 500;
@@ -245,7 +233,7 @@
 
 .mob-menu-list {
     margin-top: 48px;
-    margin-bottom: 306px;
+    // margin-bottom: 306px;
 }
 
 .mob-menu__item {
@@ -296,7 +284,7 @@
 
 .mob-soc {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .mob-soc__link {
@@ -306,4 +294,29 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-decoration: none;
+    // &::after {
+    //     content: '';
+    //     // position: absolute;
+    //     // display: block;
+    //     width: 22px;
+    //     height: 0;
+    //     margin-left: 10px;
+    //     transform: rotate(90deg);
+    //     border: 1px solid red;
+    //     left: 0;
+    //     // bottom: -10px;
+    //     // align-items: center;
+    //     // justify-content: center;
+    // } 
+}
+
+.vertical {
+    &::after {
+        content: '';
+        width: 22px;
+        height: 0;
+        margin-left: 10px;
+        transform: rotate(90deg);
+        border: 1px solid rgba(33, 33, 33, 0.2);
+    } 
 }

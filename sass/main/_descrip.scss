@@ -1,5 +1,18 @@
 .descrip__section {
     padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
 }
 
 .entrance {
@@ -23,10 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
-    align-items: center;
     justify-content: center;
-   
 }
 
 .depiction__title {
@@ -34,7 +44,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
         margin: 0 auto;
@@ -87,6 +96,9 @@
     text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 10px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .depiction__text {
